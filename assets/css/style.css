@@ -252,7 +252,7 @@ nav {
 }
 .scroll-btn {
   position: absolute;
-  bottom: 0;
+  bottom: 10vh;
   left: 50%;
   translate: -50%;
   display: flex;
