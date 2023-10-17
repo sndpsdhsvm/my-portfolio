@@ -129,8 +129,17 @@ modeSwitch.addEventListener("change", function () {
 });
 
 /* ----- SET MODES USING USER PREFERENCE ----- */
+function detectTheme() {
+  if (
+    window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches
+  ) {
+    themeLink.href = "assets/css/dark-mode.css";
+    modeSwitch.checked = true;
+  } else {
+    themeLink.href = "assets/css/light-mode.css";
+    modeSwitch.checked = false;
+  }
+}
 
-
-
-
-
+const userTheme = detectTheme();
