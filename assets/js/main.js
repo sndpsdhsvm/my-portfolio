@@ -30,7 +30,14 @@ function headerShadow() {
 
 /* ----- TYPING EFFECT ----- */
 var typingEffect = new Typed(".typedText", {
-  strings: ["Designer", "Youtuber", "Developer"],
+  strings: [
+    "Designer",
+    "Developer",
+    "Devops",
+    "Gamer",
+    "Video Editor",
+    "Twitch Streamer",
+  ],
   loop: true,
   typeSpeed: 100,
   backSpeed: 80,
@@ -108,3 +115,22 @@ function scrollActive() {
 }
 
 window.addEventListener("scroll", scrollActive);
+
+/* ----- MODE CHECKBOX STATE ----- */
+const modeSwitch = document.getElementById("mode-switch");
+const themeLink = document.getElementById("theme-style");
+
+modeSwitch.addEventListener("change", function () {
+  if (modeSwitch.checked) {
+    themeLink.href = "assets/css/dark-mode.css";
+  } else {
+    themeLink.href = "assets/css/light-mode.css";
+  }
+});
+
+/* ----- SET MODES USING USER PREFERENCE ----- */
+
+
+
+
+
