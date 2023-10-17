@@ -16,7 +16,7 @@
 
   --second-color: rgb(0, 201, 255);
   --third-color: rgb(192, 166, 49);
-  --first-shadow-color: rgba(0, 0, 0, 0.1);
+  --first-shadow-color: rgba(255, 255, 255, 0.1);
 }
 
 /* ----- BASE ----- */
@@ -64,7 +64,7 @@ html {
   transition: 0.4s;
 }
 
-.btn>i {
+.btn > i {
   margin-left: 10px;
 }
 
@@ -209,7 +209,7 @@ nav {
   transition: 0.3s;
 }
 
-.dark-mode-input:checked~.slider {
+.dark-mode-input:checked ~ .slider {
   background-color: var(--dark);
 }
 
@@ -226,7 +226,7 @@ nav {
   transition: 0.3s;
 }
 
-.dark-mode-input:checked~.slider::before {
+.dark-mode-input:checked ~ .slider::before {
   transform: translateX(29px);
   box-shadow: inset -8px 0px 0px 0px var(--light);
   background-color: var(--dark);
@@ -298,12 +298,12 @@ nav {
   gap: 20px;
 }
 
-.featured-text-btn>.blue-btn {
+.featured-text-btn > .blue-btn {
   background: var(--first-color);
   color: var(--color-white);
 }
 
-.featured-text-btn>.blue-btn:hover {
+.featured-text-btn > .blue-btn:hover {
   background: var(--first-color-hover);
 }
 
@@ -332,9 +332,9 @@ nav {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 5px 0px rgba(255, 255, 255, 0.25);
   cursor: pointer;
-  color: var(--color-black);
+  color: var(--color-white);
 }
 
 .icon:hover {
@@ -391,7 +391,7 @@ nav {
   color: var(--text-color-fourth);
   background: var(--color-white);
   border-radius: 30px;
-  box-shadow: 0 2px 5px 0 rgba(255, 255, 255, 0.25);
+  box-shadow: 0 2px 5px 0 rgba(255, 255, 255, 0.5);
 }
 
 .scroll-btn i {
@@ -444,8 +444,6 @@ nav {
   color: var(--text-color-second);
   margin-bottom: 15px;
 }
-
-
 
 /* ----- ABOUT INFO ----- */
 .about-info {
@@ -527,7 +525,7 @@ nav {
   overflow: hidden;
 }
 
-.project-box>i {
+.project-box > i {
   font-size: 50px;
   color: #00b5e7;
   margin-bottom: 25px;
@@ -556,8 +554,8 @@ nav {
 }
 
 .project-box:hover.project-box i,
-.project-box:hover.project-box>h3,
-.project-box:hover.project-box>label {
+.project-box:hover.project-box > h3,
+.project-box:hover.project-box > label {
   color: var(--color-white);
   z-index: 2;
 }
@@ -578,12 +576,12 @@ nav {
   overflow: hidden;
 }
 
-.contact-info>h2 {
+.contact-info > h2 {
   color: var(--color-white);
   margin-bottom: 20px;
 }
 
-.contact-info>p {
+.contact-info > p {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -591,7 +589,7 @@ nav {
   margin-block: 5px;
 }
 
-.contact-info p>i {
+.contact-info p > i {
   font-size: 18px;
 }
 
@@ -643,7 +641,7 @@ textarea {
   color: var(--text-color-second);
 }
 
-.form-button>.btn {
+.form-button > .btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -651,7 +649,7 @@ textarea {
   color: var(--color-white);
 }
 
-.form-button>.btn:hover {
+.form-button > .btn:hover {
   background: #00b5e7;
 }
 
@@ -667,13 +665,14 @@ footer {
   align-items: center;
   flex-direction: column;
   row-gap: 30px;
-  background: #f8f8f8;
+  background: var(--body-color);
   padding-block: 40px 60px;
 }
 
 .top-footer p {
   font-size: 25px;
   font-weight: 600;
+  color: var(--text-color-second);
 }
 
 .middle-footer .footer-menu {
@@ -686,7 +685,7 @@ footer {
 
 .footer_menu_list a {
   text-decoration: none;
-  color: var(--text-color-fourth);
+  color: var(--text-color-second);
   font-weight: 500;
   margin-inline: 20px;
 }
@@ -694,12 +693,12 @@ footer {
 .footer-social-icons {
   display: flex;
   gap: 30px;
-
 }
 
 .bottom-footer {
   font-size: 14px;
   margin-top: 10px;
+  color: var(--text-color-second);
 }
 
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */

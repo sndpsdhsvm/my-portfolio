@@ -63,7 +63,7 @@ html {
   transition: 0.4s;
 }
 
-.btn>i {
+.btn > i {
   margin-left: 10px;
 }
 
@@ -213,7 +213,7 @@ nav {
   transition: 0.3s;
 }
 
-.dark-mode-input:checked~.slider {
+.dark-mode-input:checked ~ .slider {
   background-color: var(--dark);
 }
 
@@ -230,7 +230,7 @@ nav {
   transition: 0.3s;
 }
 
-.dark-mode-input:checked~.slider::before {
+.dark-mode-input:checked ~ .slider::before {
   transform: translateX(29px);
   box-shadow: inset -8px 0px 0px 0px var(--light);
   background-color: var(--dark);
@@ -302,12 +302,12 @@ nav {
   gap: 20px;
 }
 
-.featured-text-btn>.blue-btn {
+.featured-text-btn > .blue-btn {
   background: var(--first-color);
   color: var(--color-white);
 }
 
-.featured-text-btn>.blue-btn:hover {
+.featured-text-btn > .blue-btn:hover {
   background: var(--first-color-hover);
 }
 
@@ -348,7 +348,6 @@ nav {
 .icon-footer:hover {
   color: var(--first-color);
 }
-
 
 /* ----- FEATURED IMAGE BOX ----- */
 .featured-image {
@@ -523,7 +522,7 @@ h3 {
   overflow: hidden;
 }
 
-.project-box>i {
+.project-box > i {
   font-size: 50px;
   color: #00b5e7;
   margin-bottom: 25px;
@@ -552,8 +551,8 @@ h3 {
 }
 
 .project-box:hover.project-box i,
-.project-box:hover.project-box>h3,
-.project-box:hover.project-box>label {
+.project-box:hover.project-box > h3,
+.project-box:hover.project-box > label {
   color: var(--color-white);
   z-index: 2;
 }
@@ -574,12 +573,12 @@ h3 {
   overflow: hidden;
 }
 
-.contact-info>h2 {
+.contact-info > h2 {
   color: var(--color-white);
   margin-bottom: 20px;
 }
 
-.contact-info>p {
+.contact-info > p {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -587,7 +586,7 @@ h3 {
   margin-block: 5px;
 }
 
-.contact-info p>i {
+.contact-info p > i {
   font-size: 18px;
 }
 
@@ -637,7 +636,7 @@ textarea {
   resize: none;
 }
 
-.form-button>.btn {
+.form-button > .btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -645,7 +644,7 @@ textarea {
   color: var(--color-white);
 }
 
-.form-button>.btn:hover {
+.form-button > .btn:hover {
   background: #00b5e7;
 }
 
