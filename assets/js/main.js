@@ -33,7 +33,7 @@ var typingEffect = new Typed(".typedText", {
   strings: [
     "Designer",
     "Developer",
-    "Devops",
+    "DevOps",
     "Gamer",
     "Video Editor",
     "Twitch Streamer",
