@@ -826,4 +826,7 @@ footer {
   .input-field {
     width: 100%;
   }
+  .scroll-btn {
+    visibility: hidden;
+  }
 }
