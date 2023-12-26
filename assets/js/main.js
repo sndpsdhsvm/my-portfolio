@@ -37,6 +37,7 @@ var typingEffect = new Typed(".typedText", {
     "Gamer",
     "Video Editor",
     "Twitch Streamer",
+    "QA",
   ],
   loop: true,
   typeSpeed: 100,

@@ -81,7 +81,9 @@ i {
 /* ------- BASE -------- */
 body {
   background: var(--body-color);
-  transition: background-color 0.5s, color 0.5s;
+  transition:
+    background-color 0.5s,
+    color 0.5s;
   width: 100%;
   overflow-x: hidden;
 }

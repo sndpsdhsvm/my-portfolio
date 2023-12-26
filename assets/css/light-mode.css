@@ -80,7 +80,9 @@ i {
 /* ------- BASE -------- */
 body {
   background: var(--body-color);
-  transition: background-color 0.5s, color 0.5s;
+  transition:
+    background-color 0.5s,
+    color 0.5s;
 }
 
 .container {
@@ -799,6 +801,10 @@ footer {
   .project-box {
     width: 80%;
   }
+
+  .scroll-btn {
+    visibility: hidden;
+  }
 }
 
 /* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
@@ -818,5 +824,9 @@ footer {
 
   .input-field {
     width: 100%;
+  }
+
+  .scroll-btn {
+    visibility: hidden;
   }
 }
